@@ -1,0 +1,804 @@
+[05-04 22:38:08 804] restartedMain INFO SyncclientApplication - Starting SyncclientApplication on DESKTOP-KS1R11S with PID 16124 (F:\project\syncclient\target\classes started by yaowei in F:\project\syncclient)
+[05-04 22:38:08 805] restartedMain INFO SyncclientApplication - No active profile set, falling back to default profiles: default
+[05-04 22:38:08 810] restartedMain INFO AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@15ddd35f: startup date [Fri May 04 22:38:08 CST 2018]; root of context hierarchy
+[05-04 22:38:08 845] restartedMain WARN AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.cmf.SyncclientApplication]; nested exception is java.io.FileNotFoundException: class path resource [org/apache/rocketmq/client/consumer/listener/MessageListenerConcurrently.class] cannot be opened because it does not exist
+[05-04 22:38:08 881] restartedMain ERROR SpringApplication - Application run failed
+org.springframework.beans.factory.BeanDefinitionStoreException: Failed to parse configuration class [com.cmf.SyncclientApplication]; nested exception is java.io.FileNotFoundException: class path resource [org/apache/rocketmq/client/consumer/listener/MessageListenerConcurrently.class] cannot be opened because it does not exist
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:184)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.processConfigBeanDefinitions(ConfigurationClassPostProcessor.java:316)
+	at org.springframework.context.annotation.ConfigurationClassPostProcessor.postProcessBeanDefinitionRegistry(ConfigurationClassPostProcessor.java:233)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanDefinitionRegistryPostProcessors(PostProcessorRegistrationDelegate.java:273)
+	at org.springframework.context.support.PostProcessorRegistrationDelegate.invokeBeanFactoryPostProcessors(PostProcessorRegistrationDelegate.java:93)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:532)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.cmf.SyncclientApplication.main(SyncclientApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.io.FileNotFoundException: class path resource [org/apache/rocketmq/client/consumer/listener/MessageListenerConcurrently.class] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:180)
+	at org.springframework.core.type.classreading.SimpleMetadataReader.<init>(SimpleMetadataReader.java:51)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:103)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.createMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:88)
+	at org.springframework.boot.type.classreading.ConcurrentReferenceCachingMetadataReaderFactory.getMetadataReader(ConcurrentReferenceCachingMetadataReaderFactory.java:75)
+	at org.springframework.core.type.classreading.SimpleMetadataReaderFactory.getMetadataReader(SimpleMetadataReaderFactory.java:81)
+	at org.springframework.context.annotation.ConfigurationClassParser.asSourceClass(ConfigurationClassParser.java:731)
+	at org.springframework.context.annotation.ConfigurationClassParser$SourceClass.getInterfaces(ConfigurationClassParser.java:960)
+	at org.springframework.context.annotation.ConfigurationClassParser.processInterfaces(ConfigurationClassParser.java:373)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:321)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:194)
+	at org.springframework.context.annotation.ConfigurationClassParser.doProcessConfigurationClass(ConfigurationClassParser.java:293)
+	at org.springframework.context.annotation.ConfigurationClassParser.processConfigurationClass(ConfigurationClassParser.java:245)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:202)
+	at org.springframework.context.annotation.ConfigurationClassParser.parse(ConfigurationClassParser.java:170)
+	... 18 common frames omitted
+[05-04 22:38:10 254] main INFO SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cmf.SyncclientApplicationTests], using SpringBootContextLoader
+[05-04 22:38:10 263] main INFO AbstractContextLoader - Could not detect default resource locations for test class [com.cmf.SyncclientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[05-04 22:38:10 537] main INFO SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[05-04 22:38:10 558] main INFO SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34f22f9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d1848cc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dda48d9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e4566f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b6e2263, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e4bd84a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@648c94da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a62b5bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53de625d]
+[05-04 22:38:10 973] main INFO SyncclientApplicationTests - Starting SyncclientApplicationTests on DESKTOP-KS1R11S with PID 16312 (started by yaowei in F:\project\syncclient)
+[05-04 22:38:10 974] main INFO SyncclientApplicationTests - No active profile set, falling back to default profiles: default
+[05-04 22:38:11 043] main INFO GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 22:38:11 CST 2018]; root of context hierarchy
+[05-04 22:38:12 535] main INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$d7a8b967] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-04 22:38:12 985] main INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-04 22:38:13 041] main INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-04 22:38:13 225] main INFO Version - HHH000412: Hibernate Core {5.2.16.Final}
+[05-04 22:38:13 226] main INFO Environment - HHH000206: hibernate.properties not found
+[05-04 22:38:13 281] main INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-04 22:38:13 544] main INFO HikariDataSource - HikariPool-1 - Starting...
+[05-04 22:38:13 778] main INFO HikariDataSource - HikariPool-1 - Start completed.
+[05-04 22:38:13 801] main INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-04 22:38:14 761] main INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-04 22:38:15 475] main WARN GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MQProducer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+[05-04 22:38:15 475] main INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[05-04 22:38:15 476] main INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+[05-04 22:38:15 481] main INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+[05-04 22:38:15 488] main INFO ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[05-04 22:38:15 493] main ERROR SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MQProducer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:379)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	... 40 common frames omitted
+[05-04 22:38:15 497] main ERROR TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e] to prepare test instance [com.cmf.SyncclientApplicationTests@3c6bd624]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MQProducer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:379)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	... 40 common frames omitted
+[05-04 22:38:52 974] main INFO SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cmf.SyncclientApplicationTests], using SpringBootContextLoader
+[05-04 22:38:52 982] main INFO AbstractContextLoader - Could not detect default resource locations for test class [com.cmf.SyncclientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[05-04 22:38:53 280] main INFO SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[05-04 22:38:53 304] main INFO SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34f22f9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d1848cc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dda48d9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e4566f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b6e2263, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e4bd84a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@648c94da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a62b5bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53de625d]
+[05-04 22:38:53 687] main INFO SyncclientApplicationTests - Starting SyncclientApplicationTests on DESKTOP-KS1R11S with PID 8864 (started by yaowei in F:\project\syncclient)
+[05-04 22:38:53 688] main INFO SyncclientApplicationTests - No active profile set, falling back to default profiles: default
+[05-04 22:38:53 738] main INFO GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 22:38:53 CST 2018]; root of context hierarchy
+[05-04 22:38:55 121] main INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4068b303] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-04 22:38:55 455] main INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-04 22:38:55 475] main INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-04 22:38:55 541] main INFO Version - HHH000412: Hibernate Core {5.2.16.Final}
+[05-04 22:38:55 542] main INFO Environment - HHH000206: hibernate.properties not found
+[05-04 22:38:55 578] main INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-04 22:38:55 768] main INFO HikariDataSource - HikariPool-1 - Starting...
+[05-04 22:38:55 988] main INFO HikariDataSource - HikariPool-1 - Start completed.
+[05-04 22:38:56 003] main INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-04 22:38:56 847] main INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-04 22:38:57 520] main WARN GenericWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MQProducer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+[05-04 22:38:57 520] main INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[05-04 22:38:57 522] main INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+[05-04 22:38:57 525] main INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+[05-04 22:38:57 533] main INFO ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[05-04 22:38:57 538] main ERROR SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MQProducer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:379)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	... 40 common frames omitted
+[05-04 22:38:57 541] main ERROR TestContextManager - Caught exception while allowing TestExecutionListener [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e] to prepare test instance [com.cmf.SyncclientApplicationTests@3e39f08c]
+java.lang.IllegalStateException: Failed to load ApplicationContext
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:125)
+	at org.springframework.test.context.support.DefaultTestContext.getApplicationContext(DefaultTestContext.java:108)
+	at org.springframework.test.context.web.ServletTestExecutionListener.setUpRequestContextIfNecessary(ServletTestExecutionListener.java:190)
+	at org.springframework.test.context.web.ServletTestExecutionListener.prepareTestInstance(ServletTestExecutionListener.java:132)
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289)
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97)
+	at org.junit.runners.ParentRunner$3.run(ParentRunner.java:290)
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:71)
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:288)
+	at org.junit.runners.ParentRunner.access$000(ParentRunner.java:58)
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:268)
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61)
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70)
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:363)
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190)
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137)
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:68)
+	at com.intellij.rt.execution.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:51)
+	at com.intellij.rt.execution.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:237)
+	at com.intellij.rt.execution.junit.JUnitStarter.main(JUnitStarter.java:70)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MQProducer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:379)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.test.context.SpringBootContextLoader.loadContext(SpringBootContextLoader.java:138)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContextInternal(DefaultCacheAwareContextLoaderDelegate.java:99)
+	at org.springframework.test.context.cache.DefaultCacheAwareContextLoaderDelegate.loadContext(DefaultCacheAwareContextLoaderDelegate.java:117)
+	... 24 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	... 40 common frames omitted
+[05-04 22:44:33 628] restartedMain INFO SyncclientApplication - Starting SyncclientApplication on DESKTOP-KS1R11S with PID 17512 (F:\project\syncclient\target\classes started by yaowei in F:\project\syncclient)
+[05-04 22:44:33 630] restartedMain INFO SyncclientApplication - No active profile set, falling back to default profiles: default
+[05-04 22:44:33 682] restartedMain INFO AnnotationConfigServletWebServerApplicationContext - Refreshing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@4137b819: startup date [Fri May 04 22:44:33 CST 2018]; root of context hierarchy
+[05-04 22:44:34 894] restartedMain INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$dfde45e3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-04 22:44:35 646] restartedMain INFO TomcatWebServer - Tomcat initialized with port(s): 8090 (http)
+[05-04 22:44:35 659] restartedMain INFO Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8090"]
+[05-04 22:44:35 667] restartedMain INFO StandardService - Starting service [Tomcat]
+[05-04 22:44:35 667] restartedMain INFO StandardEngine - Starting Servlet Engine: Apache Tomcat/8.5.29
+[05-04 22:44:35 670] localhost-startStop-1 INFO AprLifecycleListener - The APR based Apache Tomcat Native library which allows optimal performance in production environments was not found on the java.library.path: [C:\Program Files\Java\jdk1.8.0_91\bin;C:\WINDOWS\Sun\Java\bin;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\Java\jdk1.8.0_91\bin;F:\soft\gradle-4.6\bin;F:\soft\apache-maven-3.5.3\bin;C:\Program Files\Git\cmd;C:\Users\yaowei\AppData\Local\Microsoft\WindowsApps;F:\soft\apache-maven-3.5.3\bin;;.]
+[05-04 22:44:35 772] localhost-startStop-1 INFO [/] - Initializing Spring embedded WebApplicationContext
+[05-04 22:44:35 772] localhost-startStop-1 INFO ContextLoader - Root WebApplicationContext: initialization completed in 2090 ms
+[05-04 22:44:35 914] localhost-startStop-1 INFO ServletRegistrationBean - Servlet dispatcherServlet mapped to [/]
+[05-04 22:44:35 918] localhost-startStop-1 INFO FilterRegistrationBean - Mapping filter: 'characterEncodingFilter' to: [/*]
+[05-04 22:44:35 918] localhost-startStop-1 INFO FilterRegistrationBean - Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+[05-04 22:44:35 918] localhost-startStop-1 INFO FilterRegistrationBean - Mapping filter: 'httpPutFormContentFilter' to: [/*]
+[05-04 22:44:35 918] localhost-startStop-1 INFO FilterRegistrationBean - Mapping filter: 'requestContextFilter' to: [/*]
+[05-04 22:44:36 084] restartedMain INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-04 22:44:36 094] restartedMain INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-04 22:44:36 156] restartedMain INFO Version - HHH000412: Hibernate Core {5.2.16.Final}
+[05-04 22:44:36 158] restartedMain INFO Environment - HHH000206: hibernate.properties not found
+[05-04 22:44:36 196] restartedMain INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-04 22:44:36 352] restartedMain INFO HikariDataSource - HikariPool-1 - Starting...
+[05-04 22:44:36 501] restartedMain INFO HikariDataSource - HikariPool-1 - Start completed.
+[05-04 22:44:36 510] restartedMain INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-04 22:44:36 901] restartedMain INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-04 22:44:37 394] restartedMain WARN AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MQProducer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+[05-04 22:44:37 395] restartedMain INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[05-04 22:44:37 396] restartedMain INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+[05-04 22:44:37 398] restartedMain INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+[05-04 22:44:37 400] restartedMain INFO StandardService - Stopping service [Tomcat]
+[05-04 22:44:37 412] restartedMain INFO ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+[05-04 22:44:37 420] restartedMain ERROR SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'MQProducer': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:379)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1344)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:578)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:501)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:317)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:228)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:315)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:199)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:760)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:869)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:550)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:140)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:759)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:395)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:327)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1255)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1243)
+	at com.cmf.SyncclientApplication.main(SyncclientApplication.java:10)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'spring.rocketmq.namesrvAddr' in value "${spring.rocketmq.namesrvAddr}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:172)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:237)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:211)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:839)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1086)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1065)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:584)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:91)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessPropertyValues(AutowiredAnnotationBeanPostProcessor.java:373)
+	... 22 common frames omitted
+[05-04 22:45:23 161] main INFO SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cmf.SyncclientApplicationTests], using SpringBootContextLoader
+[05-04 22:45:23 168] main INFO AbstractContextLoader - Could not detect default resource locations for test class [com.cmf.SyncclientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[05-04 22:45:23 458] main INFO SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[05-04 22:45:23 482] main INFO SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34f22f9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d1848cc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dda48d9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e4566f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b6e2263, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e4bd84a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@648c94da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a62b5bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53de625d]
+[05-04 22:45:23 870] main INFO SyncclientApplicationTests - Starting SyncclientApplicationTests on DESKTOP-KS1R11S with PID 12668 (started by yaowei in F:\project\syncclient)
+[05-04 22:45:23 871] main INFO SyncclientApplicationTests - No active profile set, falling back to default profiles: default
+[05-04 22:45:23 919] main INFO GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 22:45:23 CST 2018]; root of context hierarchy
+[05-04 22:45:25 444] main INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9030c3bb] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-04 22:45:25 700] main INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-04 22:45:25 716] main INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-04 22:45:25 782] main INFO Version - HHH000412: Hibernate Core {5.2.16.Final}
+[05-04 22:45:25 783] main INFO Environment - HHH000206: hibernate.properties not found
+[05-04 22:45:25 818] main INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-04 22:45:26 008] main INFO HikariDataSource - HikariPool-1 - Starting...
+[05-04 22:45:26 209] main INFO HikariDataSource - HikariPool-1 - Start completed.
+[05-04 22:45:26 225] main INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-04 22:45:27 017] main INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-04 22:45:27 636] main INFO MQProducer - MQ：启动生产者
+[05-04 22:45:28 842] main INFO MQPushConsumer - MQ：启动消费者
+[05-04 22:45:29 845] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 22:45:30 238] main INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 22:45:23 CST 2018]; root of context hierarchy
+[05-04 22:45:30 323] main WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[05-04 22:45:30 394] main INFO RequestMappingHandlerMapping - Mapped "{[/save]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.save()
+[05-04 22:45:30 396] main INFO RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.cmf.controller.UserController.sayHello()
+[05-04 22:45:30 396] main INFO RequestMappingHandlerMapping - Mapped "{[/getUserByNo]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.getUserByNo(java.lang.String)
+[05-04 22:45:30 399] main INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[05-04 22:45:30 400] main INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[05-04 22:45:30 439] main INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 22:45:30 439] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 22:45:30 891] main INFO SyncclientApplicationTests - Started SyncclientApplicationTests in 7.345 seconds (JVM running for 8.554)
+[05-04 22:45:31 559] NettyClientPublicExecutor_2 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A80068317C18B4AAC2145540E80000, offsetMsgId=C0A8006800002A9F0000000000000000, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=0]
+[05-04 22:45:31 559] NettyClientPublicExecutor_6 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A80068317C18B4AAC2145540EC0004, offsetMsgId=C0A8006800002A9F00000000000002FC, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=1]
+[05-04 22:45:31 559] NettyClientPublicExecutor_8 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A80068317C18B4AAC2145540EC0006, offsetMsgId=C0A8006800002A9F000000000000047A, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=1]
+[05-04 22:45:31 559] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A80068317C18B4AAC2145540EC0003, offsetMsgId=C0A8006800002A9F000000000000023D, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=0]
+[05-04 22:45:31 559] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A80068317C18B4AAC2145540EC0007, offsetMsgId=C0A8006800002A9F0000000000000539, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=1]
+[05-04 22:45:31 559] NettyClientPublicExecutor_3 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A80068317C18B4AAC2145540EC0001, offsetMsgId=C0A8006800002A9F00000000000000BF, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=0]
+[05-04 22:45:31 559] NettyClientPublicExecutor_7 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A80068317C18B4AAC2145540EC0005, offsetMsgId=C0A8006800002A9F00000000000003BB, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=1]
+[05-04 22:45:31 559] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A80068317C18B4AAC2145540EC0002, offsetMsgId=C0A8006800002A9F000000000000017E, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=0]
+[05-04 22:45:31 559] NettyClientPublicExecutor_2 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A80068317C18B4AAC2145540EC0009, offsetMsgId=C0A8006800002A9F00000000000006B7, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=2]
+[05-04 22:45:31 559] NettyClientPublicExecutor_6 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A80068317C18B4AAC2145540EC0008, offsetMsgId=C0A8006800002A9F00000000000005F8, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=2]
+[05-04 22:45:41 546] Thread-5 INFO GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 22:45:23 CST 2018]; root of context hierarchy
+[05-04 22:45:41 568] Thread-5 ERROR MQPushConsumer - MQ：关闭消费者
+[05-04 22:45:41 590] Thread-5 INFO MQProducer - MQ：关闭生产者
+[05-04 22:45:41 591] Thread-5 INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[05-04 22:45:41 593] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+[05-04 22:45:41 597] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+[05-04 22:46:15 408] main INFO SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cmf.SyncclientApplicationTests], using SpringBootContextLoader
+[05-04 22:46:15 415] main INFO AbstractContextLoader - Could not detect default resource locations for test class [com.cmf.SyncclientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[05-04 22:46:15 710] main INFO SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[05-04 22:46:15 737] main INFO SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34f22f9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d1848cc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dda48d9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e4566f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b6e2263, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e4bd84a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@648c94da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a62b5bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53de625d]
+[05-04 22:46:16 140] main INFO SyncclientApplicationTests - Starting SyncclientApplicationTests on DESKTOP-KS1R11S with PID 18404 (started by yaowei in F:\project\syncclient)
+[05-04 22:46:16 141] main INFO SyncclientApplicationTests - No active profile set, falling back to default profiles: default
+[05-04 22:46:16 188] main INFO GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 22:46:16 CST 2018]; root of context hierarchy
+[05-04 22:46:17 496] main INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11f27c68] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-04 22:46:17 826] main INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-04 22:46:17 850] main INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-04 22:46:17 916] main INFO Version - HHH000412: Hibernate Core {5.2.16.Final}
+[05-04 22:46:17 917] main INFO Environment - HHH000206: hibernate.properties not found
+[05-04 22:46:17 952] main INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-04 22:46:18 148] main INFO HikariDataSource - HikariPool-1 - Starting...
+[05-04 22:46:18 351] main INFO HikariDataSource - HikariPool-1 - Start completed.
+[05-04 22:46:18 366] main INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-04 22:46:19 184] main INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-04 22:46:19 874] main INFO MQProducer - MQ：启动生产者
+[05-04 22:46:20 834] main INFO MQPushConsumer - MQ：启动消费者
+[05-04 22:46:21 761] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 22:46:21 778] ConsumeMessageThread_7 INFO MQPushConsumer - MQ：消费者接收新信息: C0A80068317C18B4AAC2145540EC0003 TopicTest TagTest Key3 Hello RocketMQ 3
+[05-04 22:46:21 778] ConsumeMessageThread_5 INFO MQPushConsumer - MQ：消费者接收新信息: C0A80068317C18B4AAC2145540EC0009 TopicTest TagTest Key9 Hello RocketMQ 9
+[05-04 22:46:21 778] ConsumeMessageThread_4 INFO MQPushConsumer - MQ：消费者接收新信息: C0A80068317C18B4AAC2145540E80000 TopicTest TagTest Key0 Hello RocketMQ 0
+[05-04 22:46:21 778] ConsumeMessageThread_10 INFO MQPushConsumer - MQ：消费者接收新信息: C0A80068317C18B4AAC2145540EC0007 TopicTest TagTest Key7 Hello RocketMQ 7
+[05-04 22:46:21 778] ConsumeMessageThread_9 INFO MQPushConsumer - MQ：消费者接收新信息: C0A80068317C18B4AAC2145540EC0008 TopicTest TagTest Key8 Hello RocketMQ 8
+[05-04 22:46:21 778] ConsumeMessageThread_3 INFO MQPushConsumer - MQ：消费者接收新信息: C0A80068317C18B4AAC2145540EC0002 TopicTest TagTest Key2 Hello RocketMQ 2
+[05-04 22:46:21 778] ConsumeMessageThread_1 INFO MQPushConsumer - MQ：消费者接收新信息: C0A80068317C18B4AAC2145540EC0001 TopicTest TagTest Key1 Hello RocketMQ 1
+[05-04 22:46:21 778] ConsumeMessageThread_6 INFO MQPushConsumer - MQ：消费者接收新信息: C0A80068317C18B4AAC2145540EC0006 TopicTest TagTest Key6 Hello RocketMQ 6
+[05-04 22:46:21 778] ConsumeMessageThread_2 INFO MQPushConsumer - MQ：消费者接收新信息: C0A80068317C18B4AAC2145540EC0005 TopicTest TagTest Key5 Hello RocketMQ 5
+[05-04 22:46:21 778] ConsumeMessageThread_8 INFO MQPushConsumer - MQ：消费者接收新信息: C0A80068317C18B4AAC2145540EC0004 TopicTest TagTest Key4 Hello RocketMQ 4
+[05-04 22:46:22 139] main INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 22:46:16 CST 2018]; root of context hierarchy
+[05-04 22:46:22 194] main WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[05-04 22:46:22 248] main INFO RequestMappingHandlerMapping - Mapped "{[/save]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.save()
+[05-04 22:46:22 250] main INFO RequestMappingHandlerMapping - Mapped "{[/getUserByNo]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.getUserByNo(java.lang.String)
+[05-04 22:46:22 250] main INFO RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.cmf.controller.UserController.sayHello()
+[05-04 22:46:22 253] main INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[05-04 22:46:22 254] main INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[05-04 22:46:22 292] main INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 22:46:22 293] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 22:46:22 707] main INFO SyncclientApplicationTests - Started SyncclientApplicationTests in 6.893 seconds (JVM running for 8.117)
+[05-04 22:46:23 000] ConsumeMessageThread_11 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847E418B4AAC214560A080000 TopicTest TagTest Key0 Hello RocketMQ 0
+[05-04 22:46:23 001] ConsumeMessageThread_12 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847E418B4AAC214560A0B0004 TopicTest TagTest Key4 Hello RocketMQ 4
+[05-04 22:46:23 001] NettyClientPublicExecutor_3 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847E418B4AAC214560A0B0007, offsetMsgId=C0A8006800002A9F0000000000000CAF, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=3]
+[05-04 22:46:23 001] NettyClientPublicExecutor_3 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847E418B4AAC214560A0B0008, offsetMsgId=C0A8006800002A9F0000000000000D6E, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=5]
+[05-04 22:46:23 001] NettyClientPublicExecutor_7 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847E418B4AAC214560A080000, offsetMsgId=C0A8006800002A9F0000000000000776, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=3]
+[05-04 22:46:23 001] NettyClientPublicExecutor_3 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847E418B4AAC214560A0B0009, offsetMsgId=C0A8006800002A9F0000000000000E2D, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=5]
+[05-04 22:46:23 001] NettyClientPublicExecutor_6 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847E418B4AAC214560A0B0005, offsetMsgId=C0A8006800002A9F0000000000000B31, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=4]
+[05-04 22:46:23 001] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847E418B4AAC214560A0B0006, offsetMsgId=C0A8006800002A9F0000000000000BF0, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=3]
+[05-04 22:46:23 001] NettyClientPublicExecutor_8 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847E418B4AAC214560A0B0003, offsetMsgId=C0A8006800002A9F00000000000009B3, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=2]
+[05-04 22:46:23 002] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847E418B4AAC214560A0B0004, offsetMsgId=C0A8006800002A9F0000000000000A72, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=4]
+[05-04 22:46:23 002] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847E418B4AAC214560A0B0001, offsetMsgId=C0A8006800002A9F0000000000000835, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=3]
+[05-04 22:46:23 002] NettyClientPublicExecutor_2 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847E418B4AAC214560A0B0002, offsetMsgId=C0A8006800002A9F00000000000008F4, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=2]
+[05-04 22:46:23 002] ConsumeMessageThread_14 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847E418B4AAC214560A0B0001 TopicTest TagTest Key1 Hello RocketMQ 1
+[05-04 22:46:23 003] ConsumeMessageThread_16 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847E418B4AAC214560A0B0005 TopicTest TagTest Key5 Hello RocketMQ 5
+[05-04 22:46:23 004] ConsumeMessageThread_15 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847E418B4AAC214560A0B0002 TopicTest TagTest Key2 Hello RocketMQ 2
+[05-04 22:46:23 005] ConsumeMessageThread_13 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847E418B4AAC214560A0B0003 TopicTest TagTest Key3 Hello RocketMQ 3
+[05-04 22:46:23 006] ConsumeMessageThread_17 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847E418B4AAC214560A0B0006 TopicTest TagTest Key6 Hello RocketMQ 6
+[05-04 22:46:23 006] ConsumeMessageThread_18 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847E418B4AAC214560A0B0007 TopicTest TagTest Key7 Hello RocketMQ 7
+[05-04 22:46:23 008] ConsumeMessageThread_19 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847E418B4AAC214560A0B0008 TopicTest TagTest Key8 Hello RocketMQ 8
+[05-04 22:46:23 009] ConsumeMessageThread_20 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847E418B4AAC214560A0B0009 TopicTest TagTest Key9 Hello RocketMQ 9
+[05-04 22:46:32 992] Thread-5 INFO GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 22:46:16 CST 2018]; root of context hierarchy
+[05-04 22:46:33 009] Thread-5 ERROR MQPushConsumer - MQ：关闭消费者
+[05-04 22:46:33 020] Thread-5 INFO MQProducer - MQ：关闭生产者
+[05-04 22:46:33 021] Thread-5 INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[05-04 22:46:33 023] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+[05-04 22:46:33 027] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+[05-04 23:08:39 498] main INFO SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cmf.SyncclientApplicationTests], using SpringBootContextLoader
+[05-04 23:08:39 508] main INFO AbstractContextLoader - Could not detect default resource locations for test class [com.cmf.SyncclientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[05-04 23:08:39 808] main INFO SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[05-04 23:08:39 839] main INFO SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34f22f9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d1848cc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dda48d9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e4566f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b6e2263, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e4bd84a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@648c94da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a62b5bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53de625d]
+[05-04 23:08:40 222] main INFO SyncclientApplicationTests - Starting SyncclientApplicationTests on DESKTOP-KS1R11S with PID 8380 (started by yaowei in F:\project\syncclient)
+[05-04 23:08:40 223] main INFO SyncclientApplicationTests - No active profile set, falling back to default profiles: default
+[05-04 23:08:40 273] main INFO GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:08:40 CST 2018]; root of context hierarchy
+[05-04 23:08:41 772] main INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$17ff9e46] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-04 23:08:42 084] main INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-04 23:08:42 100] main INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-04 23:08:42 170] main INFO Version - HHH000412: Hibernate Core {5.2.16.Final}
+[05-04 23:08:42 172] main INFO Environment - HHH000206: hibernate.properties not found
+[05-04 23:08:42 207] main INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-04 23:08:42 398] main INFO HikariDataSource - HikariPool-1 - Starting...
+[05-04 23:08:42 626] main INFO HikariDataSource - HikariPool-1 - Start completed.
+[05-04 23:08:42 641] main INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-04 23:08:43 439] main INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-04 23:08:44 066] main INFO MQProducer - MQ：启动生产者
+[05-04 23:08:45 043] main INFO MQPushConsumer - MQ：启动消费者
+[05-04 23:08:45 879] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:08:46 268] main INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:08:40 CST 2018]; root of context hierarchy
+[05-04 23:08:46 322] main WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[05-04 23:08:46 369] main INFO RequestMappingHandlerMapping - Mapped "{[/save]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.save()
+[05-04 23:08:46 371] main INFO RequestMappingHandlerMapping - Mapped "{[/getUserByNo]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.getUserByNo(java.lang.String)
+[05-04 23:08:46 371] main INFO RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.cmf.controller.UserController.sayHello()
+[05-04 23:08:46 373] main INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[05-04 23:08:46 374] main INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[05-04 23:08:46 412] main INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:08:46 412] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:08:46 774] main INFO SyncclientApplicationTests - Started SyncclientApplicationTests in 6.863 seconds (JVM running for 8.102)
+[05-04 23:08:47 352] NettyClientPublicExecutor_2 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006820BC18B4AAC2146A8D660000, offsetMsgId=C0A8006800002A9F0000000000000EEC, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=6]
+[05-04 23:08:47 352] NettyClientPublicExecutor_3 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006820BC18B4AAC2146A8D6B0001, offsetMsgId=C0A8006800002A9F0000000000000FAB, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=4]
+[05-04 23:08:47 352] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006820BC18B4AAC2146A8D6B0003, offsetMsgId=C0A8006800002A9F0000000000001129, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=6]
+[05-04 23:08:47 352] NettyClientPublicExecutor_6 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006820BC18B4AAC2146A8D6B0004, offsetMsgId=C0A8006800002A9F00000000000011E8, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=7]
+[05-04 23:08:47 352] NettyClientPublicExecutor_7 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006820BC18B4AAC2146A8D6C0005, offsetMsgId=C0A8006800002A9F00000000000012A7, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=5]
+[05-04 23:08:47 352] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006820BC18B4AAC2146A8D6B0002, offsetMsgId=C0A8006800002A9F000000000000106A, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=4]
+[05-04 23:08:47 372] NettyClientPublicExecutor_8 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006820BC18B4AAC2146A8D7A0006, offsetMsgId=C0A8006800002A9F0000000000001366, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=0]
+[05-04 23:08:47 373] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006820BC18B4AAC2146A8D7B0007, offsetMsgId=C0A8006800002A9F0000000000001427, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=0]
+[05-04 23:08:47 373] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006820BC18B4AAC2146A8D7B0008, offsetMsgId=C0A8006800002A9F00000000000014E8, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=0]
+[05-04 23:08:47 373] NettyClientPublicExecutor_8 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006820BC18B4AAC2146A8D7B0009, offsetMsgId=C0A8006800002A9F00000000000015A9, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=0]
+[05-04 23:08:57 369] Thread-5 INFO GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:08:40 CST 2018]; root of context hierarchy
+[05-04 23:08:57 393] Thread-5 ERROR MQPushConsumer - MQ：关闭消费者
+[05-04 23:08:57 418] Thread-5 INFO MQProducer - MQ：关闭生产者
+[05-04 23:08:57 420] Thread-5 INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[05-04 23:08:57 423] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+[05-04 23:08:57 428] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+[05-04 23:09:36 592] main INFO SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cmf.SyncclientApplicationTests], using SpringBootContextLoader
+[05-04 23:09:36 598] main INFO AbstractContextLoader - Could not detect default resource locations for test class [com.cmf.SyncclientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[05-04 23:09:36 905] main INFO SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[05-04 23:09:36 931] main INFO SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34f22f9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d1848cc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dda48d9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e4566f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b6e2263, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e4bd84a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@648c94da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a62b5bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53de625d]
+[05-04 23:09:37 309] main INFO SyncclientApplicationTests - Starting SyncclientApplicationTests on DESKTOP-KS1R11S with PID 18372 (started by yaowei in F:\project\syncclient)
+[05-04 23:09:37 310] main INFO SyncclientApplicationTests - No active profile set, falling back to default profiles: default
+[05-04 23:09:37 356] main INFO GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:09:37 CST 2018]; root of context hierarchy
+[05-04 23:09:38 758] main INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$65d40ae8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-04 23:09:39 088] main INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-04 23:09:39 111] main INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-04 23:09:39 193] main INFO Version - HHH000412: Hibernate Core {5.2.16.Final}
+[05-04 23:09:39 194] main INFO Environment - HHH000206: hibernate.properties not found
+[05-04 23:09:39 230] main INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-04 23:09:39 419] main INFO HikariDataSource - HikariPool-1 - Starting...
+[05-04 23:09:39 622] main INFO HikariDataSource - HikariPool-1 - Start completed.
+[05-04 23:09:39 637] main INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-04 23:09:40 426] main INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-04 23:09:41 164] main INFO MQProducer - MQ：启动生产者
+[05-04 23:09:42 144] main INFO MQPushConsumer - MQ：启动消费者
+[05-04 23:09:43 076] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:09:43 469] main INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:09:37 CST 2018]; root of context hierarchy
+[05-04 23:09:43 531] main WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[05-04 23:09:43 581] main INFO RequestMappingHandlerMapping - Mapped "{[/save]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.save()
+[05-04 23:09:43 582] main INFO RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.cmf.controller.UserController.sayHello()
+[05-04 23:09:43 582] main INFO RequestMappingHandlerMapping - Mapped "{[/getUserByNo]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.getUserByNo(java.lang.String)
+[05-04 23:09:43 584] main INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[05-04 23:09:43 585] main INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[05-04 23:09:43 628] main INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:09:43 628] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:09:43 986] main INFO SyncclientApplicationTests - Started SyncclientApplicationTests in 6.981 seconds (JVM running for 8.201)
+[05-04 23:09:44 526] NettyClientPublicExecutor_2 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847C418B4AAC2146B6CC30000, offsetMsgId=C0A8006800002A9F000000000000166A, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=7]
+[05-04 23:09:44 526] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847C418B4AAC2146B6CC70002, offsetMsgId=C0A8006800002A9F00000000000017E8, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=6]
+[05-04 23:09:44 526] NettyClientPublicExecutor_3 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847C418B4AAC2146B6CC70001, offsetMsgId=C0A8006800002A9F0000000000001729, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=8]
+[05-04 23:09:44 527] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847C418B4AAC2146B6CC70003, offsetMsgId=C0A8006800002A9F00000000000018A7, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=5]
+[05-04 23:09:44 528] NettyClientPublicExecutor_6 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847C418B4AAC2146B6CC70004, offsetMsgId=C0A8006800002A9F0000000000001966, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=8]
+[05-04 23:09:44 529] NettyClientPublicExecutor_7 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847C418B4AAC2146B6CC70005, offsetMsgId=C0A8006800002A9F0000000000001A25, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=9]
+[05-04 23:09:44 530] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847C418B4AAC2146B6CCA0007, offsetMsgId=C0A8006800002A9F0000000000001BA5, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=1]
+[05-04 23:09:44 530] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847C418B4AAC2146B6CCA0008, offsetMsgId=C0A8006800002A9F0000000000001C66, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=1]
+[05-04 23:09:44 530] NettyClientPublicExecutor_8 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847C418B4AAC2146B6CCA0006, offsetMsgId=C0A8006800002A9F0000000000001AE4, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=1]
+[05-04 23:09:44 530] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847C418B4AAC2146B6CCB0009, offsetMsgId=C0A8006800002A9F0000000000001D27, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=1]
+[05-04 23:09:54 537] Thread-5 INFO GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:09:37 CST 2018]; root of context hierarchy
+[05-04 23:09:54 556] Thread-5 ERROR MQPushConsumer - MQ：关闭消费者
+[05-04 23:09:54 579] Thread-5 INFO MQProducer - MQ：关闭生产者
+[05-04 23:09:54 580] Thread-5 INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[05-04 23:09:54 583] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+[05-04 23:09:54 587] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+[05-04 23:10:42 555] main INFO SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cmf.SyncclientApplicationTests], using SpringBootContextLoader
+[05-04 23:10:42 561] main INFO AbstractContextLoader - Could not detect default resource locations for test class [com.cmf.SyncclientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[05-04 23:10:42 851] main INFO SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[05-04 23:10:42 878] main INFO SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34f22f9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d1848cc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dda48d9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e4566f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b6e2263, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e4bd84a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@648c94da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a62b5bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53de625d]
+[05-04 23:10:43 409] main INFO SyncclientApplicationTests - Starting SyncclientApplicationTests on DESKTOP-KS1R11S with PID 18352 (started by yaowei in F:\project\syncclient)
+[05-04 23:10:43 410] main INFO SyncclientApplicationTests - No active profile set, falling back to default profiles: default
+[05-04 23:10:43 459] main INFO GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:10:43 CST 2018]; root of context hierarchy
+[05-04 23:10:44 833] main INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$7511f0b6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-04 23:10:45 178] main INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-04 23:10:45 214] main INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-04 23:10:45 287] main INFO Version - HHH000412: Hibernate Core {5.2.16.Final}
+[05-04 23:10:45 288] main INFO Environment - HHH000206: hibernate.properties not found
+[05-04 23:10:45 326] main INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-04 23:10:45 519] main INFO HikariDataSource - HikariPool-1 - Starting...
+[05-04 23:10:45 722] main INFO HikariDataSource - HikariPool-1 - Start completed.
+[05-04 23:10:45 739] main INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-04 23:10:46 645] main INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-04 23:10:47 291] main INFO MQProducer - MQ：启动生产者
+[05-04 23:10:48 274] main INFO MQPushConsumer - MQ：启动消费者
+[05-04 23:10:49 175] ConsumeMessageThread_2 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006820BC18B4AAC2146A8D6B0002 TopicTest TagTest Key2 Hello RocketMQ 2
+[05-04 23:10:49 175] ConsumeMessageThread_12 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847C418B4AAC2146B6CC70002 TopicTest TagTest Key2 Hello RocketMQ 2
+[05-04 23:10:49 175] ConsumeMessageThread_9 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847C418B4AAC2146B6CC70003 TopicTest TagTest Key3 Hello RocketMQ 3
+[05-04 23:10:49 175] ConsumeMessageThread_3 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006820BC18B4AAC2146A8D6B0003 TopicTest TagTest Key3 Hello RocketMQ 3
+[05-04 23:10:49 175] ConsumeMessageThread_5 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006820BC18B4AAC2146A8D6B0001 TopicTest TagTest Key1 Hello RocketMQ 1
+[05-04 23:10:49 175] ConsumeMessageThread_8 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006820BC18B4AAC2146A8D6C0005 TopicTest TagTest Key5 Hello RocketMQ 5
+[05-04 23:10:49 175] ConsumeMessageThread_11 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847C418B4AAC2146B6CC70004 TopicTest TagTest Key4 Hello RocketMQ 4
+[05-04 23:10:49 175] ConsumeMessageThread_6 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847C418B4AAC2146B6CC70001 TopicTest TagTest Key1 Hello RocketMQ 1
+[05-04 23:10:49 175] ConsumeMessageThread_10 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847C418B4AAC2146B6CC70005 TopicTest TagTest Key5 Hello RocketMQ 5
+[05-04 23:10:49 175] ConsumeMessageThread_7 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847C418B4AAC2146B6CC30000 TopicTest TagTest Key0 Hello RocketMQ 0
+[05-04 23:10:49 175] ConsumeMessageThread_4 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006820BC18B4AAC2146A8D6B0004 TopicTest TagTest Key4 Hello RocketMQ 4
+[05-04 23:10:49 176] ConsumeMessageThread_1 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006820BC18B4AAC2146A8D660000 TopicTest TagTest Key0 Hello RocketMQ 0
+[05-04 23:10:49 209] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:10:49 664] main INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:10:43 CST 2018]; root of context hierarchy
+[05-04 23:10:49 719] main WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[05-04 23:10:49 770] main INFO RequestMappingHandlerMapping - Mapped "{[/save]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.save()
+[05-04 23:10:49 771] main INFO RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.cmf.controller.UserController.sayHello()
+[05-04 23:10:49 772] main INFO RequestMappingHandlerMapping - Mapped "{[/getUserByNo]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.getUserByNo(java.lang.String)
+[05-04 23:10:49 774] main INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[05-04 23:10:49 775] main INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[05-04 23:10:49 814] main INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:10:49 814] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:10:50 382] main INFO SyncclientApplicationTests - Started SyncclientApplicationTests in 7.43 seconds (JVM running for 8.683)
+[05-04 23:10:50 675] ConsumeMessageThread_14 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847B018B4AAC2146C6F260002 TopicTest TagTest Key2 Hello RocketMQ 2
+[05-04 23:10:50 676] ConsumeMessageThread_15 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847B018B4AAC2146C6F240000 TopicTest TagTest Key0 Hello RocketMQ 0
+[05-04 23:10:50 676] ConsumeMessageThread_13 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847B018B4AAC2146C6F260001 TopicTest TagTest Key1 Hello RocketMQ 1
+[05-04 23:10:50 679] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847B018B4AAC2146C6F260002, offsetMsgId=C0A8006800002A9F0000000000001F66, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=7]
+[05-04 23:10:50 680] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847B018B4AAC2146C6F2F0006, offsetMsgId=C0A8006800002A9F0000000000002262, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=2]
+[05-04 23:10:50 680] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847B018B4AAC2146C6F2F0007, offsetMsgId=C0A8006800002A9F0000000000002323, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=2]
+[05-04 23:10:50 680] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847B018B4AAC2146C6F2F0008, offsetMsgId=C0A8006800002A9F00000000000023E4, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=2]
+[05-04 23:10:50 680] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847B018B4AAC2146C6F2F0009, offsetMsgId=C0A8006800002A9F00000000000024A5, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=2]
+[05-04 23:10:50 680] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847B018B4AAC2146C6F260005, offsetMsgId=C0A8006800002A9F00000000000021A3, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=11]
+[05-04 23:10:50 680] NettyClientPublicExecutor_2 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847B018B4AAC2146C6F260003, offsetMsgId=C0A8006800002A9F0000000000002025, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=6]
+[05-04 23:10:50 681] NettyClientPublicExecutor_7 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847B018B4AAC2146C6F240000, offsetMsgId=C0A8006800002A9F0000000000001DE8, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=9]
+[05-04 23:10:50 681] NettyClientPublicExecutor_8 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847B018B4AAC2146C6F260001, offsetMsgId=C0A8006800002A9F0000000000001EA7, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=10]
+[05-04 23:10:50 681] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A8006847B018B4AAC2146C6F260004, offsetMsgId=C0A8006800002A9F00000000000020E4, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=10]
+[05-04 23:10:50 682] ConsumeMessageThread_16 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847B018B4AAC2146C6F260003 TopicTest TagTest Key3 Hello RocketMQ 3
+[05-04 23:10:50 683] ConsumeMessageThread_17 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847B018B4AAC2146C6F260005 TopicTest TagTest Key5 Hello RocketMQ 5
+[05-04 23:10:50 683] ConsumeMessageThread_18 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847B018B4AAC2146C6F260004 TopicTest TagTest Key4 Hello RocketMQ 4
+[05-04 23:11:00 677] Thread-5 INFO GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:10:43 CST 2018]; root of context hierarchy
+[05-04 23:11:00 684] Thread-5 ERROR MQPushConsumer - MQ：关闭消费者
+[05-04 23:11:00 695] Thread-5 INFO MQProducer - MQ：关闭生产者
+[05-04 23:11:00 695] Thread-5 INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[05-04 23:11:00 697] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+[05-04 23:11:00 701] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+[05-04 23:31:26 431] main INFO SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cmf.SyncclientApplicationTests], using SpringBootContextLoader
+[05-04 23:31:26 438] main INFO AbstractContextLoader - Could not detect default resource locations for test class [com.cmf.SyncclientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[05-04 23:31:26 743] main INFO SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[05-04 23:31:26 769] main INFO SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34f22f9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d1848cc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dda48d9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e4566f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b6e2263, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e4bd84a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@648c94da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a62b5bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53de625d]
+[05-04 23:31:27 159] main INFO SyncclientApplicationTests - Starting SyncclientApplicationTests on DESKTOP-KS1R11S with PID 18992 (started by yaowei in F:\project\syncclient)
+[05-04 23:31:27 160] main INFO SyncclientApplicationTests - No active profile set, falling back to default profiles: default
+[05-04 23:31:27 216] main INFO GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:31:27 CST 2018]; root of context hierarchy
+[05-04 23:31:28 617] main INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$1a754e3f] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-04 23:31:28 975] main INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-04 23:31:28 994] main INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-04 23:31:29 060] main INFO Version - HHH000412: Hibernate Core {5.2.16.Final}
+[05-04 23:31:29 061] main INFO Environment - HHH000206: hibernate.properties not found
+[05-04 23:31:29 098] main INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-04 23:31:29 290] main INFO HikariDataSource - HikariPool-1 - Starting...
+[05-04 23:31:29 497] main INFO HikariDataSource - HikariPool-1 - Start completed.
+[05-04 23:31:29 514] main INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-04 23:31:30 382] main INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-04 23:31:31 074] main INFO MQProducer - MQ：启动生产者
+[05-04 23:31:32 053] main INFO MQPushConsumer - MQ：启动消费者
+[05-04 23:31:32 920] ConsumeMessageThread_9 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847B018B4AAC2146C6F2F0007 TopicTest2 TagTest2 Key7 Hello RocketMQ 7
+[05-04 23:31:32 920] ConsumeMessageThread_5 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006820BC18B4AAC2146A8D7A0006 TopicTest2 TagTest2 Key6 Hello RocketMQ 6
+[05-04 23:31:32 920] ConsumeMessageThread_2 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006820BC18B4AAC2146A8D7B0009 TopicTest2 TagTest2 Key9 Hello RocketMQ 9
+[05-04 23:31:32 920] ConsumeMessageThread_12 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847B018B4AAC2146C6F2F0008 TopicTest2 TagTest2 Key8 Hello RocketMQ 8
+[05-04 23:31:32 920] ConsumeMessageThread_1 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006820BC18B4AAC2146A8D7B0008 TopicTest2 TagTest2 Key8 Hello RocketMQ 8
+[05-04 23:31:32 920] ConsumeMessageThread_6 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847C418B4AAC2146B6CCA0007 TopicTest2 TagTest2 Key7 Hello RocketMQ 7
+[05-04 23:31:32 920] ConsumeMessageThread_11 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847C418B4AAC2146B6CCA0006 TopicTest2 TagTest2 Key6 Hello RocketMQ 6
+[05-04 23:31:32 921] ConsumeMessageThread_7 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847B018B4AAC2146C6F2F0009 TopicTest2 TagTest2 Key9 Hello RocketMQ 9
+[05-04 23:31:32 920] ConsumeMessageThread_4 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847C418B4AAC2146B6CCA0008 TopicTest2 TagTest2 Key8 Hello RocketMQ 8
+[05-04 23:31:32 920] ConsumeMessageThread_10 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847B018B4AAC2146C6F2F0006 TopicTest2 TagTest2 Key6 Hello RocketMQ 6
+[05-04 23:31:32 920] ConsumeMessageThread_8 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006847C418B4AAC2146B6CCB0009 TopicTest2 TagTest2 Key9 Hello RocketMQ 9
+[05-04 23:31:32 920] ConsumeMessageThread_3 INFO MQPushConsumer - MQ：消费者接收新信息: C0A8006820BC18B4AAC2146A8D7B0007 TopicTest2 TagTest2 Key7 Hello RocketMQ 7
+[05-04 23:31:33 004] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:31:33 400] main INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:31:27 CST 2018]; root of context hierarchy
+[05-04 23:31:33 455] main WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[05-04 23:31:33 507] main INFO RequestMappingHandlerMapping - Mapped "{[/save]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.save()
+[05-04 23:31:33 508] main INFO RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.cmf.controller.UserController.sayHello()
+[05-04 23:31:33 509] main INFO RequestMappingHandlerMapping - Mapped "{[/getUserByNo]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.getUserByNo(java.lang.String)
+[05-04 23:31:33 512] main INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[05-04 23:31:33 513] main INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[05-04 23:31:33 550] main INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:31:33 550] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:31:33 964] main INFO SyncclientApplicationTests - Started SyncclientApplicationTests in 7.118 seconds (JVM running for 8.357)
+[05-04 23:31:34 270] ConsumeMessageThread_12 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800684A3018B4AAC2147F68EE0009 TopicTest2 TagTest2 Key9 Hello RocketMQ 9
+[05-04 23:31:34 270] ConsumeMessageThread_19 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800684A3018B4AAC2147F68ED0006 TopicTest2 TagTest2 Key6 Hello RocketMQ 6
+[05-04 23:31:34 271] ConsumeMessageThread_16 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800684A3018B4AAC2147F68ED0005 TopicTest TagTest Key5 Hello RocketMQ 5
+[05-04 23:31:34 271] ConsumeMessageThread_20 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800684A3018B4AAC2147F68ED0007 TopicTest2 TagTest2 Key7 Hello RocketMQ 7
+[05-04 23:31:34 270] ConsumeMessageThread_17 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800684A3018B4AAC2147F68ED0002 TopicTest TagTest Key2 Hello RocketMQ 2
+[05-04 23:31:34 271] ConsumeMessageThread_18 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800684A3018B4AAC2147F68ED0003 TopicTest TagTest Key3 Hello RocketMQ 3
+[05-04 23:31:34 271] ConsumeMessageThread_13 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800684A3018B4AAC2147F68EA0000 TopicTest TagTest Key0 Hello RocketMQ 0
+[05-04 23:31:34 271] ConsumeMessageThread_14 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800684A3018B4AAC2147F68ED0004 TopicTest TagTest Key4 Hello RocketMQ 4
+[05-04 23:31:34 271] ConsumeMessageThread_15 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800684A3018B4AAC2147F68ED0001 TopicTest TagTest Key1 Hello RocketMQ 1
+[05-04 23:31:34 272] NettyClientPublicExecutor_3 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800684A3018B4AAC2147F68ED0004, offsetMsgId=C0A8006800002A9F0000000000002862, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=12]
+[05-04 23:31:34 272] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800684A3018B4AAC2147F68ED0002, offsetMsgId=C0A8006800002A9F00000000000026E4, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=8]
+[05-04 23:31:34 272] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800684A3018B4AAC2147F68EE0008, offsetMsgId=C0A8006800002A9F0000000000002B62, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=3]
+[05-04 23:31:34 272] NettyClientPublicExecutor_7 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800684A3018B4AAC2147F68EA0000, offsetMsgId=C0A8006800002A9F0000000000002566, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=11]
+[05-04 23:31:34 272] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800684A3018B4AAC2147F68EE0009, offsetMsgId=C0A8006800002A9F0000000000002C23, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=3]
+[05-04 23:31:34 272] NettyClientPublicExecutor_8 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800684A3018B4AAC2147F68ED0001, offsetMsgId=C0A8006800002A9F0000000000002625, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=12]
+[05-04 23:31:34 273] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800684A3018B4AAC2147F68ED0006, offsetMsgId=C0A8006800002A9F00000000000029E0, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=3]
+[05-04 23:31:34 274] ConsumeMessageThread_1 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800684A3018B4AAC2147F68EE0008 TopicTest2 TagTest2 Key8 Hello RocketMQ 8
+[05-04 23:31:34 275] NettyClientPublicExecutor_2 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800684A3018B4AAC2147F68ED0003, offsetMsgId=C0A8006800002A9F00000000000027A3, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=7]
+[05-04 23:31:34 273] NettyClientPublicExecutor_6 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800684A3018B4AAC2147F68ED0007, offsetMsgId=C0A8006800002A9F0000000000002AA1, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=3]
+[05-04 23:31:34 275] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800684A3018B4AAC2147F68ED0005, offsetMsgId=C0A8006800002A9F0000000000002921, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=13]
+[05-04 23:31:39 269] Thread-5 INFO GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:31:27 CST 2018]; root of context hierarchy
+[05-04 23:31:39 308] Thread-5 ERROR MQPushConsumer - MQ：关闭消费者
+[05-04 23:31:39 325] Thread-5 INFO MQProducer - MQ：关闭生产者
+[05-04 23:31:39 327] Thread-5 INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[05-04 23:31:39 330] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+[05-04 23:31:39 335] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown completed.
+[05-04 23:38:02 238] main INFO SpringBootTestContextBootstrapper - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.cmf.SyncclientApplicationTests], using SpringBootContextLoader
+[05-04 23:38:02 245] main INFO AbstractContextLoader - Could not detect default resource locations for test class [com.cmf.SyncclientApplicationTests]: no resource found for suffixes {-context.xml, Context.groovy}.
+[05-04 23:38:02 532] main INFO SpringBootTestContextBootstrapper - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+[05-04 23:38:02 559] main INFO SpringBootTestContextBootstrapper - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@39655d3e, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@34f22f9d, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3d1848cc, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@7dda48d9, org.springframework.test.context.support.DirtiesContextTestExecutionListener@6e4566f1, org.springframework.test.context.transaction.TransactionalTestExecutionListener@4b6e2263, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@344f4dea, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@1b7c473a, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@5e4bd84a, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@648c94da, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@2a62b5bc, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@53de625d]
+[05-04 23:38:02 983] main INFO SyncclientApplicationTests - Starting SyncclientApplicationTests on DESKTOP-KS1R11S with PID 15420 (started by yaowei in F:\project\syncclient)
+[05-04 23:38:02 984] main INFO SyncclientApplicationTests - No active profile set, falling back to default profiles: default
+[05-04 23:38:03 029] main INFO GenericWebApplicationContext - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:38:03 CST 2018]; root of context hierarchy
+[05-04 23:38:04 433] main INFO PostProcessorRegistrationDelegate$BeanPostProcessorChecker - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$c381a3] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+[05-04 23:38:04 749] main INFO LocalContainerEntityManagerFactoryBean - Building JPA container EntityManagerFactory for persistence unit 'default'
+[05-04 23:38:04 767] main INFO LogHelper - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+[05-04 23:38:04 833] main INFO Version - HHH000412: Hibernate Core {5.2.16.Final}
+[05-04 23:38:04 835] main INFO Environment - HHH000206: hibernate.properties not found
+[05-04 23:38:04 871] main INFO Version - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+[05-04 23:38:05 067] main INFO HikariDataSource - HikariPool-1 - Starting...
+[05-04 23:38:05 272] main INFO HikariDataSource - HikariPool-1 - Start completed.
+[05-04 23:38:05 287] main INFO Dialect - HHH000400: Using dialect: org.hibernate.dialect.MySQL5Dialect
+[05-04 23:38:06 099] main INFO LocalContainerEntityManagerFactoryBean - Initialized JPA EntityManagerFactory for persistence unit 'default'
+[05-04 23:38:06 707] main INFO MQProducer - MQ：启动生产者
+[05-04 23:38:07 691] main INFO MQPushConsumer - MQ：启动消费者
+[05-04 23:38:08 601] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:38:08 991] main INFO RequestMappingHandlerAdapter - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:38:03 CST 2018]; root of context hierarchy
+[05-04 23:38:09 056] main WARN JpaBaseConfiguration$JpaWebConfiguration$JpaWebMvcConfiguration - spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+[05-04 23:38:09 104] main INFO RequestMappingHandlerMapping - Mapped "{[/save]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.save()
+[05-04 23:38:09 106] main INFO RequestMappingHandlerMapping - Mapped "{[/getUserByNo]}" onto public com.cmf.domain.UserDomain com.cmf.controller.UserController.getUserByNo(java.lang.String)
+[05-04 23:38:09 106] main INFO RequestMappingHandlerMapping - Mapped "{[/hello]}" onto public java.lang.String com.cmf.controller.UserController.sayHello()
+[05-04 23:38:09 109] main INFO RequestMappingHandlerMapping - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+[05-04 23:38:09 110] main INFO RequestMappingHandlerMapping - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+[05-04 23:38:09 146] main INFO SimpleUrlHandlerMapping - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:38:09 146] main INFO SimpleUrlHandlerMapping - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+[05-04 23:38:09 510] main INFO SyncclientApplicationTests - Started SyncclientApplicationTests in 6.863 seconds (JVM running for 8.072)
+[05-04 23:38:10 081] NettyClientPublicExecutor_6 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800683C3C18B4AAC2148573180003, offsetMsgId=C0A8006800002A9F0000000000002F21, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=8]
+[05-04 23:38:10 081] NettyClientPublicExecutor_3 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800683C3C18B4AAC2148573120000, offsetMsgId=C0A8006800002A9F0000000000002CE4, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=13]
+[05-04 23:38:10 081] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800683C3C18B4AAC2148573180006, offsetMsgId=C0A8006800002A9F000000000000315E, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=4]
+[05-04 23:38:10 082] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800683C3C18B4AAC2148573180001, offsetMsgId=C0A8006800002A9F0000000000002DA3, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=14]
+[05-04 23:38:10 082] NettyClientPublicExecutor_5 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800683C3C18B4AAC2148573180002, offsetMsgId=C0A8006800002A9F0000000000002E62, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=9]
+[05-04 23:38:10 082] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800683C3C18B4AAC2148573190008, offsetMsgId=C0A8006800002A9F00000000000032E0, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=3], queueOffset=4]
+[05-04 23:38:10 082] NettyClientPublicExecutor_4 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800683C3C18B4AAC2148573190009, offsetMsgId=C0A8006800002A9F00000000000033A1, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=0], queueOffset=4]
+[05-04 23:38:10 082] NettyClientPublicExecutor_8 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800683C3C18B4AAC2148573180005, offsetMsgId=C0A8006800002A9F000000000000309F, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=15]
+[05-04 23:38:10 082] NettyClientPublicExecutor_7 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800683C3C18B4AAC2148573180004, offsetMsgId=C0A8006800002A9F0000000000002FE0, messageQueue=MessageQueue [topic=TopicTest, brokerName=DESKTOP-KS1R11S, queueId=1], queueOffset=14]
+[05-04 23:38:10 082] NettyClientPublicExecutor_1 INFO MQProducer - MQ: 生产者发送消息 SendResult [sendStatus=SEND_OK, msgId=C0A800683C3C18B4AAC2148573190007, offsetMsgId=C0A8006800002A9F000000000000321F, messageQueue=MessageQueue [topic=TopicTest2, brokerName=DESKTOP-KS1R11S, queueId=2], queueOffset=4]
+[05-04 23:38:10 087] ConsumeMessageThread_4 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800683C3C18B4AAC2148573190009 TopicTest2 TagTest2 Key9 Hello RocketMQ 9
+[05-04 23:38:10 087] ConsumeMessageThread_7 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800683C3C18B4AAC2148573190008 TopicTest2 TagTest2 Key8 Hello RocketMQ 8
+[05-04 23:38:10 087] ConsumeMessageThread_8 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800683C3C18B4AAC2148573180002 TopicTest TagTest Key2 Hello RocketMQ 2
+[05-04 23:38:10 088] ConsumeMessageThread_3 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800683C3C18B4AAC2148573180006 TopicTest2 TagTest2 Key6 Hello RocketMQ 6
+[05-04 23:38:10 089] ConsumeMessageThread_1 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800683C3C18B4AAC2148573180003 TopicTest TagTest Key3 Hello RocketMQ 3
+[05-04 23:38:10 090] ConsumeMessageThread_2 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800683C3C18B4AAC2148573120000 TopicTest TagTest Key0 Hello RocketMQ 0
+[05-04 23:38:10 091] ConsumeMessageThread_6 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800683C3C18B4AAC2148573180001 TopicTest TagTest Key1 Hello RocketMQ 1
+[05-04 23:38:10 093] ConsumeMessageThread_5 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800683C3C18B4AAC2148573190007 TopicTest2 TagTest2 Key7 Hello RocketMQ 7
+[05-04 23:38:10 094] ConsumeMessageThread_10 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800683C3C18B4AAC2148573180004 TopicTest TagTest Key4 Hello RocketMQ 4
+[05-04 23:38:10 094] ConsumeMessageThread_9 INFO MQPushConsumer - MQ：消费者接收新信息: C0A800683C3C18B4AAC2148573180005 TopicTest TagTest Key5 Hello RocketMQ 5
+[05-04 23:38:15 089] Thread-5 INFO GenericWebApplicationContext - Closing org.springframework.web.context.support.GenericWebApplicationContext@4879f0f2: startup date [Fri May 04 23:38:03 CST 2018]; root of context hierarchy
+[05-04 23:38:15 113] Thread-5 ERROR MQPushConsumer - MQ：关闭消费者
+[05-04 23:38:15 131] Thread-5 INFO MQProducer - MQ：关闭生产者
+[05-04 23:38:15 133] Thread-5 INFO LocalContainerEntityManagerFactoryBean - Closing JPA EntityManagerFactory for persistence unit 'default'
+[05-04 23:38:15 136] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown initiated...
+[05-04 23:38:15 141] Thread-5 INFO HikariDataSource - HikariPool-1 - Shutdown completed.
